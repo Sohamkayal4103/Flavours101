@@ -4,7 +4,8 @@
   "description": "You enter the name of the main ingridient that you have and you will get all the recipes related to that",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
   },
   "author": "Soham Kayal",
   "license": "ISC",
