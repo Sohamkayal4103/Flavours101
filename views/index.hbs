@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Flavours 101</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/8e/83/6f/8e836f537ec522948c28b4970c66fce4.jpg" type="image/jpg">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+
+}
+body{
+    width: 600px;
+    /* background: linear-gradient(rgba(253, 117, 76, 0.245),rgba(253, 161, 76, 0.287)),url(../images/banner.jpg); */
+    /* background-position: center; */
+    /* background: url("../images/banner.jpg"); */
+    /* background: linear-gradient(rgb(8, 198, 241),rgba(74, 7, 243, 0.646)); */
+    background-size: cover;
+}
+.header{
+    /* font-family: 'Qahiri', sans-serif; */
+    font-family: 'Shadows Into Light', cursive;
+    position: relative;
+    
+}
+.header h1{
+    position: relative;
+    left: 650px;
+    top: 10px;
+    font-size: 3.4rem;
+    font-weight: 800;
+}
+.header a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+}
+.header h4{
+    position: relative;
+    left: 550px;
+    top: -10px;
+    font-size: 2.2rem;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+#ingridient{
+    position: relative;
+    height: 50px;
+    top: 10px;
+    left: 500px;
+    width: 500px;
+    border-radius: 21px;
+    outline: none;
+    color: red;
+    font-weight: bold;
+    border: 3px solid red;
+}
+::placeholder { 
+    color: black;
+    opacity: 1; 
+    position: relative;
+    left: 0px;
+}
+#inner{
+    color:red;
+}
+#submit_btn{
+    position: relative;
+    height: 50px;
+    top: -40px;
+    left: 900px;
+    width: 100px;
+    border-radius: 25px;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    border: 3px solid red;
+    background: red;
+}
+#image_container img{
+    position: relative;
+    width: 270px;
+    height: 200px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    image-rendering: crisp-edges;
+
+    /* top: 20px; */
+}
+#secondimage_container img{
+    position: relative;
+    width: 270px;
+    height: 200px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    image-rendering: crisp-edges;
+
+    /* top: 20px; */
+}
+#thirdimage_container img{
+    position: relative;
+    width: 270px;
+    height: 200px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    image-rendering: crisp-edges;
+
+    /* top: 20px; */
+}
+#fourthimage_container img{
+    position: relative;
+    width: 270px;
+    height: 200px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    image-rendering: crisp-edges;
+
+    /* top: 20px; */
+}
+.row{
+    /* display: grid;
+    justify-content:space-between;
+    grid-template-columns: repeat(4,1fr); */
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    left: 480px;
+}
+.cards{
+    position: relative;
+    /* left: 200px;
+    top: 50px; */
+    width:270px;
+    height: 460px;
+    background-color: rgb(174, 4, 4);
+    border-radius:20px;
+    margin: 30px;
+    box-shadow: 5px 5px 8px 5px #888888;
+}
+#recipe_name{
+    position: relative;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size:1.6rem;
+    font-weight: 600;
+    top: 10px;
+    left: 0px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+#info{
+    position: relative;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size:1.2rem;
+    /* font-weight: 200; */
+    top: 15px;
+    left: 0px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+#full_recipe{
+    position: relative;
+    /* font-family: 'Otomanopee One', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-size:1.2rem;
+    font-weight: 400;
+    width: 180px;
+    top: 40px;
+    left: 45px;
+    background-color: aliceblue;
+    color: rgb(174, 4, 4);
+    text-align: center;
+    border-radius:20px;
+    cursor: pointer;
+    
+}
+#secondrecipe_name{
+    position: relative;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size:1.6rem;
+    font-weight: 600;
+    top: 10px;
+    left: 0px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+#secondinfo{
+    position: relative;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size:1.2rem;
+    /* font-weight: 200; */
+    top: 15px;
+    left: 0px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+#secondfull_recipe{
+    position: relative;
+    /* font-family: 'Otomanopee One', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-size:1.2rem;
+    font-weight: 400;
+    width: 180px;
+    top: 40px;
+    left: 45px;
+    background-color: aliceblue;
+    color: rgb(174, 4, 4);
+    text-align: center;
+    border-radius:20px;
+    cursor: pointer;
+    
+}
+#thirdrecipe_name{
+    position: relative;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size:1.6rem;
+    font-weight: 600;
+    top: 10px;
+    left: 0px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+#thirdinfo{
+    position: relative;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size:1.2rem;
+    /* font-weight: 200; */
+    top: 15px;
+    left: 0px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+#thirdfull_recipe{
+    position: relative;
+    /* font-family: 'Otomanopee One', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-size:1.2rem;
+    font-weight: 400;
+    width: 180px;
+    top: 40px;
+    left: 45px;
+    background-color: aliceblue;
+    color: rgb(174, 4, 4);
+    text-align: center;
+    border-radius:20px;
+    cursor: pointer;
+    
+}
+#fourthrecipe_name{
+    position: relative;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size:1.6rem;
+    font-weight: 600;
+    top: 10px;
+    left: 0px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+#fourthinfo{
+    position: relative;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size:1.2rem;
+    /* font-weight: 200; */
+    top: 15px;
+    left: 0px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+#fourthfull_recipe{
+    position: relative;
+    /* font-family: 'Otomanopee One', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-size:1.2rem;
+    font-weight: 400;
+    width: 180px;
+    top: 40px;
+    left: 45px;
+    background-color: aliceblue;
+    color: rgb(174, 4, 4);
+    text-align: center;
+    border-radius:20px;
+    cursor: pointer;
+    
+}
+.maincontent h1{
+    font-family: 'Shadows Into Light', cursive;
+    color: rgba(0, 0, 0, 0.605);
+    position: relative;
+    left: 160px;
+    font-size: 2.8rem;
+}
+.hide{
+    display: none;
+}
+#submit_btn:hover{
+    cursor: pointer;
+}
+.msg{
+    display: flex;
+    position: relative;
+    top: 200px;
+    left: 530px;
+}
+.img_noval img {
+    width: 100px;
+    height: 70px;
+}
+.mainmsg h1{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: rgba(0, 0, 0, 0.605);
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Shadows Into Light', cursive;
+
+
+}
+.steps{
+    background-color: rgb(174, 4, 4);
+    position: absolute;
+    left: 350px;
+    width: 800px;
+    border-radius:20px;
+    height: 900px;
+}
+.steps p{
+    font-family: 'Shadows Into Light', cursive;
+    width:600px;
+    text-align: center;
+    position: relative;
+    top: 80px;
+    color: white;
+    left: 100px;
+    font-size: 1.2rem;
+}
+.steps img{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    position: relative;
+    top: 30px;
+    left: 350px;
+
+}
+.steps h1{
+    position: relative;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    left: 320px;
+    top: 50px;
+}
+.steps_close .fas{
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 760px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.suggestion p{
+    position: relative;
+    top: 130px;
+    background-color:white;
+    color: rgb(174, 4, 4);
+    text-align: center;
+    width: 300px;
+    left: 250px;
+    height: 30px;
+    border-radius:20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.suggestion a{
+    text-decoration:none;
+}
+
+</style>
+<body>
+    <div class="header">
+        <a href=""><h1>F<span id="inner">l</span>a<span id="inner">v</span><span id="inner">o</span>urs <span id="inner">1</span>0<span id="inner">1</span></h1></a>
+        <h4>Best place to search for recipies</h4>
+        <form>
+            <input type="search" placeholder=" Enter your main ingridient" id="ingridient" autocomplete="off">
+            <input type="submit" id="submit_btn" value="search">
+        </form>
+    </div>
+    <div class="maincontent hide" id="mainone">
+        <h1>Top Results:</h1>
+        <div class="row ">
+            <div class="cards">
+                <div id="image_container"><img src="https://i.pinimg.com/736x/8e/83/6f/8e836f537ec522948c28b4970c66fce4.jpg" id="firstimg" alt=""></div>
+                <div id="recipe_name">No More Recipes Found</div>
+                <div id="info">Cuisine</div>
+                <div id="full_recipe">Read full recipe</div>
+            </div>
+            <div class="cards">
+                <div id="secondimage_container"><img src="https://i.pinimg.com/736x/8e/83/6f/8e836f537ec522948c28b4970c66fce4.jpg" id="secondimg" alt=""></div>
+                <div id="secondrecipe_name">No More Recipes Found</div>
+                <div id="secondinfo">Cuisine</div>
+                <div id="secondfull_recipe">Read full recipe</div>
+            </div>
+            <div class="cards">
+                <div id="thirdimage_container"><img src="https://i.pinimg.com/736x/8e/83/6f/8e836f537ec522948c28b4970c66fce4.jpg" id="thirdimg" alt=""></div>
+                <div id="thirdrecipe_name">No More Recipes Found</div>
+                <div id="thirdinfo">Cuisine</div>
+                <div id="thirdfull_recipe">Read full recipe</div>
+            </div>
+            <div class="cards">
+                <div id="fourthimage_container"><img src="https://i.pinimg.com/736x/8e/83/6f/8e836f537ec522948c28b4970c66fce4.jpg" id="fourthimg" alt=""></div>
+                <div id="fourthrecipe_name">No More Recipes Found</div>
+                <div id="fourthinfo">Cuisine</div>
+                <div id="fourthfull_recipe">Read full recipe</div>
+            </div>
+        </div>    
+    </div>
+    <div class="novalue hide" id="nothing">
+        <div class="msg">
+            <div class="img_noval"><img src="https://i.pinimg.com/736x/8e/83/6f/8e836f537ec522948c28b4970c66fce4.jpg"></div>
+            <div class="mainmsg"><h1>Please enter an ingridient</h1></div>
+        </div>
+    </div>
+    <div class="steps hide" id="stepsone">
+        <img src="images/error.jpg" alt="" id="steps_img">
+        <h1 class="steps_main" id="thefirst_name">Recipe name</h1>
+        <div class="steps_close"><i class="fas fa-times" id="cross_btn" title="Close"></i></div>
+        <p id="thefirst_step"> 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, 
+            vero facere facilis eveniet nam recusandae, tempora delectus
+            corporis, quos optio debitis culpa doloribus quae libero in porro 
+            iure tenetur accusantium!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, 
+            vero facere facilis eveniet nam recusandae, tempora delectus
+            corporis, quos optio debitis culpa doloribus quae libero in porro 
+            iure tenetur accusantium!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, 
+            vero facere facilis eveniet nam recusandae, tempora delectus
+            corporis, quos optio debitis culpa doloribus quae libero in porro 
+            iure tenetur accusantium!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, 
+            vero facere facilis eveniet nam recusandae, tempora delectus
+            corporis, quos optio debitis culpa doloribus quae libero in porro 
+            iure tenetur accusantium!
+        </p>
+        <div class="suggestion">
+            <a href="" id="ytvideolink"><p>Back to home page</p></a>
+            
+        </div>
+    </div>
+    
+    {{!-- <script src="js/app.js"></script> --}}
+    <script>
+        const submit_btn=document.getElementById("submit_btn");
+const mainone=document.getElementById("mainone");
+const ingridient=document.getElementById("ingridient");
+const nothing=document.getElementById("nothing");
+
+
+const image_container=document.getElementById("image_container");
+const recipe_name=document.getElementById("recipe_name");
+const info=document.getElementById("info");
+const full_recipe=document.getElementById("full_recipe");
+const stepsone=document.getElementById("stepsone");
+const cross_btn=document.getElementById("cross_btn");
+const steps_img=document.getElementById("steps_img");
+const thefirst_name=document.getElementById("thefirst_name");
+const thefirst_step=document.getElementById("thefirst_step");
+const ytvideolink=document.getElementById("ytvideolink");
+
+const secondimage_container=document.getElementById("secondimage_container");
+const secondrecipe_name=document.getElementById("secondrecipe_name");
+const secondinfo=document.getElementById("secondinfo");
+const secondfull_recipe=document.getElementById("secondfull_recipe");
+
+const thirdimage_container=document.getElementById("thirdimage_container");
+const thirdrecipe_name=document.getElementById("thirdrecipe_name");
+const thirdinfo=document.getElementById("thirdinfo");
+const thirdfull_recipe=document.getElementById("thirdfull_recipe");
+
+const fourthimage_container=document.getElementById("fourthimage_container");
+const fourthrecipe_name=document.getElementById("fourthrecipe_name");
+const fourthinfo=document.getElementById("fourthinfo");
+const fourthfull_recipe=document.getElementById("fourthfull_recipe");
+
+
+
+
+const firstimg=document.getElementById("firstimg");
+const secondimg=document.getElementById("secondimg");
+const thirdimg=document.getElementById("thirdimg");
+const fourthimg=document.getElementById("fourthimg");
+
+// const getalert =(event)=>{
+//     event.preventDefault();
+//     mainone.classList.remove("hide");
+// }
+
+
+// submit_btn.addEventListener("click", getalert);
+
+
+const getrecipe=async(event)=>{
+    event.preventDefault();
+    let ingridientval=ingridient.value;
+    if(ingridientval===""){
+        nothing.classList.remove("hide");
+        mainone.classList.add("hide");
+        stepsone.classList.add("hide");
+    }else{
+        mainone.classList.remove("hide");
+        nothing.classList.add("hide");
+        stepsone.classList.add("hide");
+        let url =`https://www.themealdb.com/api/json/v1/1/search.php?s=${ingridientval}`;
+        console.log(url);
+        const response =await fetch(url);
+        const data =await response.json();
+        const arrdata=[data];
+        console.log(arrdata[0].meals[0].strMeal);
+        recipe_name.innerHTML=arrdata[0].meals[0].strMeal;
+        firstimg.src=arrdata[0].meals[0].strMealThumb;
+        info.innerHTML=arrdata[0].meals[0].strArea;
+        const show_recipe=()=>{
+            stepsone.classList.remove("hide");
+            mainone.classList.add("hide");
+            thefirst_name.innerHTML=arrdata[0].meals[0].strMeal;
+            thefirst_step.innerHTML=arrdata[0].meals[0].strInstructions;
+            steps_img.src=arrdata[0].meals[0].strMealThumb;
+            ytvideolink.src=arrdata[0].meals[0].strYoutube;
+            
+
+            const close_steps=()=>{
+                mainone.classList.remove("hide");
+                stepsone.classList.add("hide");
+            }
+
+            cross_btn.addEventListener("click", close_steps);
+
+        }
+        full_recipe.addEventListener("click",show_recipe);
+
+        secondrecipe_name.innerHTML=arrdata[0].meals[1].strMeal;
+        secondimg.src=arrdata[0].meals[1].strMealThumb;
+        secondinfo.innerHTML=arrdata[0].meals[1].strArea;
+
+        thirdrecipe_name.innerHTML=arrdata[0].meals[2].strMeal;
+        thirdimg.src=arrdata[0].meals[2].strMealThumb;
+        thirdinfo.innerHTML=arrdata[0].meals[2].strArea;
+
+        fourthrecipe_name.innerHTML=arrdata[0].meals[3].strMeal;
+        fourthimg.src=arrdata[0].meals[3].strMealThumb;
+        fourthinfo.innerHTML=arrdata[0].meals[3].strArea;
+        console.log(arrdata[0].meals.length);
+    submit_btn.addEventListener("click",getrecipe);
+    }
+}
+submit_btn.addEventListener("click",getrecipe);
+
+    </script>
+</body>
+</html>
